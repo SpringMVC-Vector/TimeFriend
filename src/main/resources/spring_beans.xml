@@ -133,10 +133,4 @@
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
     </aop:config>
 
-
-    <bean id="genericDao" abstract="true"
-          class="com.vector.basic.dao.impl.GenericDaoImpl">
-        <property name="sessionFactory" ref="sessionFactory" />
-    </bean>
-
 </beans>
