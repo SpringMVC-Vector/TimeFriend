@@ -22,4 +22,11 @@ public class HelloController {
         return "success";
     }
 
+    @RequestMapping(value = "admin", method = {RequestMethod.GET})
+    public String admin() {
+        logger.debug("Hello Maven SpringMVC");
+        System.out.println("Hello Maven SpringMVC");
+        return "success";
+    }
+
 }
