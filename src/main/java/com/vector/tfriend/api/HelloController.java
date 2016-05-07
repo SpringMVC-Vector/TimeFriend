@@ -22,6 +22,20 @@ public class HelloController {
         return "success";
     }
 
+    @RequestMapping(value = "failure", method = {RequestMethod.GET})
+    public String failure() {
+        logger.debug("Hello Maven failure");
+        System.out.println("Hello Maven failure");
+        return "failure";
+    }
+
+    @RequestMapping(value = "logout", method = {RequestMethod.GET})
+    public String logout() {
+        logger.debug("Hello Maven logout");
+        System.out.println("Hello Maven logout");
+        return "logout";
+    }
+
     @RequestMapping(value = "admin", method = {RequestMethod.GET})
     public String admin() {
         logger.debug("Hello Maven SpringMVC");

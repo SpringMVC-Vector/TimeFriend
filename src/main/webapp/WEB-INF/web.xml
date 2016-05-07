@@ -24,14 +24,15 @@
     <!-- 使能 Spring Security End -->
     
     <!-- 启动 SpringIOC 的配置 Start -->
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:spring_context.xml</param-value>
+    </context-param>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring_context.xml</param-value>
-    </context-param>
     <!-- 启动 SpringIOC 的配置 End -->
 
     <!-- Log4j 的配置 Start-->
